@@ -1,0 +1,40 @@
+{
+  "name": "@zerointermittency/elastic",
+  "version": "1.0.0",
+  "main": "ZIElastic.js",
+  "scripts": {
+    "test": "nyc node --max_old_space_size=4096 test/index.js",
+    "test-nyan": "REPORTER=nyan node --max_old_space_size=4096 test/index.js",
+    "benchmark": "node --max_old_space_size=4096"
+  },
+  "keywords": [
+    "elastic",
+    "zerointermittency"
+  ],
+  "engines": ">=8.9.0",
+  "license": "MIT",
+  "homepage": "https://github.com/zerointermittency/elastic",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zerointermittency/elastic"
+  },
+  "bugs": {
+    "url": "https://github.com/zerointermittency/elastic/issues"
+  },
+  "dependencies": {
+    "bodybuilder": "^2.2.6",
+    "elasticsearch": "^13.3.1",
+    "@zerointermittency/error": "^1.0.5",
+    "@zerointermittency/utils": "^1.0.2"
+  },
+  "devDependencies": {
+    "benchmark": "^2.1.4",
+    "chai": "^3.5.0",
+    "mocha": "^3.5.0",
+    "@zerointermittency/date": "^1.0.0",
+    "@zerointermittency/mongo": "^1.0.0",
+    "nyc": "^11.3.0",
+    "test-console": "^1.0.0",
+    "wrapper-path": "^2.0.0"
+  }
+}

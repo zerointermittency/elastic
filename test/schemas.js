@@ -1,0 +1,85 @@
+'use strict';
+
+module.exports = {
+    elasticsearch1: {
+        index: 'elasticsearch1',
+        type: 'elasticsearch1',
+        displayName: {original: 'Test'},
+        deepLink: '/elasticsearch1/{{_id}}',
+        attrs: {
+            _id: {type: 'String', common: '__id'},
+            name: {
+                type: 'LocalizableString', common: 'title',
+                analyzer: 'standard', priority: 1,
+            },
+            description: {
+                type: 'LocalizableString', common: 'description',
+                analyzer: 'standard', priority: 3,
+            },
+            images: {type: 'LocalizableString', common: 'images'},
+            videos: {type: 'LocalizableString', common: 'videos'},
+            otherPriority: {type: 'String', analyzer: 'standard', priority: 2},
+            otherNotPriority: {type: 'String', analyzer: 'standard', nil: 'otherNotPriority'},
+            start: {type: 'Date'},
+            from: {type: 'Date', common: 'from'},
+            client: {type: 'String', common: '__client'},
+            appgroup: {type: 'String', common: '__appgroup'},
+            apps: {type: 'String', common: '__apps'},
+            accessgroups: {type: 'String', common: '__accessgroups'},
+        },
+    },
+    elasticsearch2: {
+        index: 'elasticsearch2',
+        type: 'elasticsearch2',
+        displayName: {original: 'Test'},
+        deepLink: '/elasticsearch2/{{_id}}',
+        attrs: {
+            _id: {type: 'String', common: '__id'},
+            name: {
+                type: 'LocalizableString', common: 'title',
+                analyzer: 'standard', priority: 1,
+            },
+            description: {
+                type: 'LocalizableString', common: 'description',
+                analyzer: 'standard', priority: 3,
+            },
+            images: {type: 'LocalizableString', common: 'images'},
+            videos: {type: 'LocalizableString', common: 'videos'},
+            otherPriority: {type: 'String', analyzer: 'standard', priority: 2},
+            otherNotPriority: {type: 'String', analyzer: 'standard', nil: 'otherNotPriority'},
+            start: {type: 'Date'},
+            from: {type: 'Date', common: 'from'},
+            client: {type: 'String', common: '__client'},
+            appgroup: {type: 'String', common: '__appgroup'},
+            apps: {type: 'String', common: '__apps'},
+            accessgroups: {type: 'String', common: '__accessgroups'},
+        },
+    },
+    searchablesearch: {
+        index: 'searchablesearch',
+        type: 'searchablesearch',
+        displayName: {original: 'Test'},
+        deepLink: '/searchablesearch/{{_id}}',
+        attrs: {
+            _id: {type: 'String', common: '__id'},
+            name: {
+                type: 'LocalizableString', common: 'title',
+                analyzer: 'standard', priority: 1,
+            },
+            description: {
+                type: 'LocalizableString', common: 'description',
+                analyzer: 'standard', priority: 3,
+            },
+            images: {type: 'LocalizableString', common: 'images'},
+            videos: {type: 'LocalizableString', common: 'videos'},
+            otherPriority: {type: 'String', analyzer: 'standard', priority: 2},
+            otherNotPriority: {type: 'String', analyzer: 'standard', nil: 'otherNotPriority'},
+            start: {type: 'Date'},
+            from: {type: 'Date', common: 'from'},
+            client: {type: 'String', common: '__client'},
+            appgroup: {type: 'String', common: '__appgroup'},
+            apps: {type: 'String', common: '__apps'},
+            accessgroups: {type: 'String', common: '__accessgroups'},
+        },
+    },
+};
